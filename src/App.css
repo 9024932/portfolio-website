@@ -1,0 +1,7 @@
+html{
+  background-color: aqua;
+}
+h1, h2, p{
+  color: white;
+  font-style: italic;
+}
