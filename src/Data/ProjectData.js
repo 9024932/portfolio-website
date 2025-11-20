@@ -10,7 +10,7 @@ const ProjectData = [
     id: 2,
     title: "Rocket Boost",
     description: "Rocket Boost is de eerste game die ik heb gemaakt ik gebruikte unity & C# om het te maken",
-    image: "/img/rocket.png",
+    image: "/img/rocket2.png",
   },
 
     {

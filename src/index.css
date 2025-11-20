@@ -145,7 +145,7 @@ p{
 
 .info-item h1 {
   color: white;
-  font-size: 56px; /* iets kleiner dan 80px */
+  font-size: 56px; 
   line-height: 0.95;
   margin: 0;
 }
@@ -203,7 +203,7 @@ width: 96px;
   font-weight: 500;
   color: #ffffff;
   position: relative;
-  z-index: 10;  /* hoger dan icon-box */
+  z-index: 10;  
 }
 
 .contact-form {
@@ -265,29 +265,72 @@ width: 96px;
     transform: translateY(-2px);
 }
 
-.project-div {
+.project-div{
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: center; /* centreert de projectkaarten */
+  justify-content: center;
+  margin-top: 100px;
 }
 
-/* Zorg dat elk direct kind van .project-div een vaste basisbreedte heeft (past naast elkaar) */
+.project, h2 {
+   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+}
+
+
 .project-div > * {
-  flex: 0 0 280px; /* iets groter dan eerder */
+  flex: 0 0 280px; 
   max-width: 280px;
+  bottom: 20%;
 }
 
-/* Maakt afbeeldingen binnen de project-div kleiner/groter en behoudt aspect-ratio */
 .project-div img {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 8px;
 }
+.project-img{
+width: 35%;
+border-radius: 8px;
+margin-left: 20px;
 
-/* Responsief: op kleine schermen stapelen de items en gebruiken volledige breedte */
+
+}
+
+.project-h1{
+  color: white;
+  text-align: center;
+}
+
+.project-description{
+  padding-left: 55%;
+  position: absolute;
+  bottom: 50%;
+}
+
+.button-detail{
+ padding: 0.75rem 2rem;
+    background: white;
+    color: #62CDFF;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+
+
 @media (max-width: 600px) {
   .project-div {
     justify-content: center;

@@ -12,12 +12,12 @@ const ProjectDetail = () => {
   if (!project) return <h2>Project niet gevonden</h2>;
 
   return (
-    <div>
+    <div> 
 
-      <button onClick={() => navigate(-1)}>Terug naar projecten</button>
-      <h1>{project.title}</h1>
-      <p>{project.description}</p>
-      <img src={project.image} alt={project.title} />
+      <button className="button-detail"  onClick={() => navigate(-1)}>Terug naar projecten</button>
+      <h1 className="project-h1">{project.title}</h1>
+      <p className="project-description" >{project.description}</p>
+      <img className="project-img" src={project.image} alt={project.title} />
     </div>
   );
 };

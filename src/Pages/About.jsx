@@ -8,6 +8,7 @@ const About = () => {
   };
   return (
     <div>
+      <div className="about-me" >
       <h3>Hallo mijn naam is Juliany Rosenblad.</h3>
       <h4>
         ik ben 17 jaar oud en ik kom uit Rotterdam ik doe de opleiding mbo4
@@ -15,6 +16,7 @@ const About = () => {
         vakkenvuller na dat ik klaar ben met deze opleiding wil ik misschien
         verder studeren zodat ik een Game Developer kan worden
       </h4>
+      </div>
       <a
         href="https://github.com/9024932"
         target="_blank"
