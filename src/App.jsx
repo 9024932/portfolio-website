@@ -8,7 +8,7 @@
   function App() {
 
       return (
-      <BrowserRouter>
+      <BrowserRouter basename='/portfolio-website/' >
       <Navbar/>
       <Routes>
         <Route index element={<Home />} />

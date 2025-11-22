@@ -1,29 +1,32 @@
 import { useState } from "react";
 import skills from "../data/Skills";
+
 const About = () => {
   const [selectedSkill, setSelectedSkill] = useState(null);
 
   const handleSkillClick = (skillId) => {
     setSelectedSkill(selectedSkill === skillId ? null : skillId);
   };
+
   return (
     <div>
-      <div className="about-me" >
-      <h3>Hallo mijn naam is Juliany Rosenblad.</h3>
-      <h4>
-        ik ben 17 jaar oud en ik kom uit Rotterdam ik doe de opleiding mbo4
-        software development mijn hobbies zijn Gamen ik werkte bij de plus als
-        vakkenvuller na dat ik klaar ben met deze opleiding wil ik misschien
-        verder studeren zodat ik een Game Developer kan worden
-      </h4>
-      </div>
-      <a
-        href="https://github.com/9024932"
-        target="_blank"
-        className="social-link github"
-      >
-        GitHub
-      </a>
+      <section className="about-section">
+        <img
+          src="./img/ik.jpg"
+          alt="Juliany Rosenblad"
+          className="about-image"
+        />
+        <div className="about-text">
+          <h2>About Me</h2>
+          <p>
+            Hallo mijn naam is Juliany Rosenblad. Ik ben 17 jaar oud en ik kom uit
+            Rotterdam. Ik doe de opleiding MBO4 Software Development. Mijn hobby's
+            zijn gamen en basketballen. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Iure,
+          </p>
+        </div>
+      </section>
+
       <div className="skills-container">
         <h2>Mijn Vaardigheden</h2>
         <div className="skills-grid">

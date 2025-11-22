@@ -17,7 +17,7 @@ const ProjectDetail = () => {
       <button className="button-detail"  onClick={() => navigate(-1)}>Terug naar projecten</button>
       <h1 className="project-h1">{project.title}</h1>
       <p className="project-description" >{project.description}</p>
-      <img className="project-img" src={project.image} alt={project.title} />
+      <img className="project-img" src={project.image1} alt={project.title} />
     </div>
   );
 };
