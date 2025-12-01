@@ -12,7 +12,7 @@ const ProjectDetail = () => {
   if (!project) return <h2>Project niet gevonden</h2>;
 
   return (
-    <div> 
+    <div className="project-detail"> 
 
       <button className="button-detail"  onClick={() => navigate(-1)}>Terug naar projecten</button>
       <h1 className="project-h1">{project.title}</h1>

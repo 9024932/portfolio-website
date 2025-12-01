@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import skills from '../Data/Skills';
+import { useState } from "react";
+import skills from "../Data/Skills";
 
 const Skills = () => {
   const [selectedSkillId, setSelectedSkillId] = useState(null);
@@ -15,7 +15,9 @@ const Skills = () => {
         {skills.map((skill) => (
           <div
             key={skill.id}
-            className={`skill-item ${selectedSkillId === skill.id ? 'selected' : ''}`}
+            className={`skill-item ${
+              selectedSkillId === skill.id ? "selected" : ""
+            }`}
             onClick={() => handleSkillClick(skill.id)}
           >
             <h3>{skill.name}</h3>

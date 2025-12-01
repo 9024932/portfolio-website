@@ -11,7 +11,7 @@ const ProjectCard = ({ id, title, description, image, onClick }) => {
   return (
     <section className="book-container">
       <h2>{title}</h2>
-      <img  
+      <img
         key={id}
         src={image}
         alt={title}

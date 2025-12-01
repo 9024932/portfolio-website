@@ -9,7 +9,7 @@ const About = () => {
   };
 
   return (
-    <div>
+    <div className="about-div">
       <section className="about-section">
         <img
           src="./img/ik.jpg"

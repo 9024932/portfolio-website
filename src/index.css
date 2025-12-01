@@ -22,17 +22,25 @@ a {
 }
 
 .navbar {
-  background: #ffffff;
-  padding: 2rem 3rem;
+  position: fixed;
+  margin-bottom: 5%;
+    top: 30px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 50px; 
+    padding: 20px 220px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
 }
 
 .nav-list {
   list-style: none;
   display: flex;
-  justify-content: flex-end; 
-  gap: 2rem;
+  justify-content: center; 
+  gap: 8rem;
   margin: 0; 
-  padding: 0; 
+  padding: 0;
 }
 
 .nav-list a {
@@ -48,6 +56,7 @@ a {
 
 img{
   width: 325px;
+  border-radius: 25%;
 }
 
 .picture{
@@ -86,6 +95,7 @@ p{
 }
 
 .skills-container {
+  text-align: center;
   padding: 1rem;
   margin-top: 1rem;
   max-width: 1200px;
@@ -102,6 +112,7 @@ p{
 }
 
 .skill-item {
+  text-align: center;
     padding: 0.75rem;
     border-radius: 8px;
     cursor: pointer;
@@ -132,6 +143,9 @@ p{
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: flex-start;
+}
+.contact2{
+  margin-top: 200px;
 }
 
 .contact-info {
@@ -211,6 +225,7 @@ width: 96px;
 }
 
 .contact-form {
+    bottom: 10%;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -271,19 +286,21 @@ width: 96px;
 
 .project-div {
   display: flex;
-  gap: 1.5rem;
+  margin-top: 150px;
+  gap: 2.5rem;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: center; /* centreert de projectkaarten */
+  justify-content: center;
+
 }
 
-/* Zorg dat elk direct kind van .project-div een vaste basisbreedte heeft (past naast elkaar) */
+
 .project-div > * {
-  flex: 0 0 280px; /* iets groter dan eerder */
+  flex: 0 0 280px; 
   max-width: 280px;
 }
 
-/* Maakt afbeeldingen binnen de project-div kleiner/groter en behoudt aspect-ratio */
+
 .project-div img {
   width: 100%;
   height: auto;
@@ -291,7 +308,25 @@ width: 96px;
   border-radius: 8px;
 }
 
-/* Responsief: op kleine schermen stapelen de items en gebruiken volledige breedte */
+.project-detail{
+  margin-top: 200px;
+}
+
+.project-img{
+  width: 25%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin-left: 3%;
+}
+
+.project-h1{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+
 @media (max-width: 600px) {
   .project-div {
     justify-content: center;
@@ -302,6 +337,9 @@ width: 96px;
   }
 }
 
+.about-div{
+  margin-top: 200px;
+}
 .about-section {
   display: flex;
   align-items: center;
@@ -314,8 +352,10 @@ width: 96px;
 }
 
 .about-image {
+  display: flex;
+  margin-bottom: 1.5%;
   width: 200px;
-  height: auto;
+
   border-radius: 8px;
   flex-shrink: 0;
 }
@@ -337,4 +377,19 @@ width: 96px;
   text-align: left;
   color: white;
   margin: 0;
+}
+
+.button-detail{
+    display: flex;
+    padding: 0.75rem 2rem;
+    background: white;
+    color: #62CDFF;
+    border: none;
+    margin: 1%;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
 }
